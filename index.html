@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tas Backpack Multifungsi Premium - Gaya & Fungsi dalam Satu</title>
+    <meta name="description" content="Tas backpack multifungsi premium dengan desain fashionable dan praktis. Cocok untuk kerja, kuliah, dan traveling. Diskon spesial 53% - dari Rp 399.999 jadi Rp 185.000!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        .stat-item {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInDown 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: slideInUp 1s ease-out 0.3s both;
+        }
+
+        @keyframes slideInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Product Section */
+        .product-section {
+            background: white;
+            padding: 80px 0;
+            margin-top: -50px;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .product-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .product-images {
+            position: relative;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .main-image:hover {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .price-section {
+            margin: 30px 0;
+        }
+
+        .original-price {
+            font-size: 1.2rem;
+            text-decoration: line-through;
+            color: #999;
+            margin-right: 15px;
+        }
+
+        .current-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-right: 15px;
+        }
+
+        .discount-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        /* Countdown Timer */
+        .countdown-container {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            color: white;
+        }
+
+        .countdown-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .countdown-item {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* How to Use Section */
+        .how-to-use {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-rating {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 15px;
+            opacity: 0.9;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 20px 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            transition: all 0.3s ease;
+            animation: bounce 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        .guarantee {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .guarantee-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .product-showcase {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .main-image {
+                height: 350px;
+            }
+
+            .current-price {
+                font-size: 2rem;
+            }
+
+            .countdown {
+                gap: 10px;
+            }
+
+            .countdown-item {
+                min-width: 60px;
+                padding: 10px;
+            }
+
+            .countdown-number {
+                font-size: 1.5rem;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .guarantee {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .current-price {
+                font-size: 1.8rem;
+            }
+
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">TasKu Premium</div>
+                <div class="stats">
+                    <div class="stat-item">👀 <span id="viewers">2,847</span> melihat</div>
+                    <div class="stat-item">📦 Stok: <span id="stock">47</span></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Tas Backpack Multifungsi Premium</h1>
+            <p>Kombinasi sempurna antara gaya fashionable dan fungsi praktis untuk gaya hidup modern Anda</p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-showcase">
+                <div class="product-images">
+                    <img src="https://cdn.orderonline.id/uploads/images_5969401747562647094.gif" alt="Tas Backpack Multifungsi Premium" class="main-image">
+                </div>
+                <div class="product-info">
+                    <h2>Tas Backpack Multifungsi - Fashion Meets Function</h2>
+                    <p>Tas backpack premium yang dirancang khusus untuk memenuhi kebutuhan modern Anda. Dengan desain yang elegan dan fitur multifungsi, tas ini sempurna untuk berbagai aktivitas - dari bekerja di kantor, kuliah, hingga traveling.</p>
+                    
+                    <div class="price-section">
+                        <span class="original-price">Rp 399.999</span>
+                        <span class="current-price">Rp 185.000</span>
+                        <span class="discount-badge">HEMAT 53%</span>
+                    </div>
+
+                    <!-- Countdown Timer -->
+                    <div class="countdown-container">
+                        <div class="countdown-title">⚡ PROMO TERBATAS BERAKHIR DALAM:</div>
+                        <div class="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">23</span>
+                                <span class="countdown-label">Jam</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">45</span>
+                                <span class="countdown-label">Menit</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">32</span>
+                                <span class="countdown-label">Detik</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Mengapa Memilih Tas Kami?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">💼</span>
+                    <h3>Design Premium</h3>
+                    <p>Tampilan fashionable dan elegan yang cocok untuk berbagai acara, dari casual hingga formal. Material berkualitas tinggi dengan finishing yang sempurna.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3>Multifungsi</h3>
+                    <p>Banyak kompartemen tersembunyi dan slot khusus untuk laptop, tablet, charger, dan barang-barang penting lainnya. Satu tas untuk semua kebutuhan.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🛡️</span>
+                    <h3>Tahan Lama</h3>
+                    <p>Dibuat dari material anti-air dan tahan aus. Tali adjustable yang kuat dan nyaman di punggung. Investasi jangka panjang untuk mobilitas Anda.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Praktis & Nyaman</h3>
+                    <p>Ringan namun muat banyak barang. Ergonomis design yang tidak membebani punggung. Perfect untuk daily use dan traveling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">Cara Penggunaan</h2>
+            <p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 50px;">Sangat mudah digunakan untuk berbagai aktivitas sehari-hari</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Atur Kompartemen</h3>
+                    <p>Susun barang-barang Anda pada kompartemen yang sesuai. Laptop di slot khusus, dokumen di bagian utama, dan aksesoris di slot depan.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Sesuaikan Tali</h3>
+                    <p>Atur panjang tali sesuai dengan postur tubuh Anda untuk kenyamanan maksimal saat digunakan dalam waktu lama.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Siap Beraktivitas</h3>
+                    <p>Tas siap menemani aktivitas Anda - bekerja, kuliah, meeting, atau traveling. Satu tas untuk semua kebutuhan.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Perawatan Mudah</h3>
+                    <p>Bersihkan dengan kain lembab jika kotor. Material anti-air memudahkan perawatan dan menjaga penampilan tetap prima.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 30px;">Apa Kata Mereka?</h2>
+            <p style="text-align: center; font-size: 1.2rem; opacity: 0.9;">Ribuan customer puas dengan kualitas produk kami</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Tas ini benar-benar multifungsi! Muat laptop 15 inci, buku-buku kuliah, dan masih ada space buat barang lain. Kualitasnya premium banget, worth it dengan harganya."</p>
+                    <div class="testimonial-author">- Sari M., Mahasiswa</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Sudah 6 bulan pakai untuk kerja sehari-hari, masih awet dan tidak ada yang rusak. Designnya juga cocok buat ke kantor, terlihat profesional."</p>
+                    <div class="testimonial-author">- Budi S., Karyawan</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Perfect untuk traveling! Anti-air jadi tidak khawatir saat hujan. Kompartemennya banyak, jadi barang terorganisir dengan rapi. Recommended!"</p>
+                    <div class="testimonial-author">- Lisa R., Travel Blogger</div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p>"Awalnya ragu karena harganya murah, ternyata kualitasnya bagus banget. Tali-talinya strong, jahitannya rapi. Puas banget sama pembelian ini!"</p>
+                    <div class="testimonial-author">- Andi P., Freelancer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Jangan Lewatkan Kesempatan Emas Ini!</h2>
+            <p style="font-size: 1.3rem; color: #666; margin-bottom: 40px;">Promo spesial terbatas! Hanya tersisa <span style="color: #e74c3c; font-weight: bold;">47 pcs</span> lagi</p>
+            
+            <a href="https://nava.orderonline.id/checkout-evb-melody-multifunctional-backpack" class="cta-button" target="_blank">
+                🛒 PESAN SEKARANG - Rp 185.000
+            </a>
+
+            <div class="guarantee">
+                <div class="guarantee-item">
+                    <span>✅</span>
+                    <span>7 Hari Garansi Return</span>
+                </div>
+                <div class="guarantee-item">
+                    <span>✅</span>
+                    <span>100% Produk Original</span>
+                </div>
+                <div class="guarantee-item">
+                    <span>✅</span>
+                    <span>Kualitas Premium Terjamin</span>
+                </div>
+                <div class="guarantee-item">
+                    <span>✅</span>
+                    <span>Free Ongkir Seluruh Indonesia</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px; color: #e74c3c; font-weight: bold; font-size: 1.1rem;">
+                ⚠️ STOK TERBATAS - Buruan sebelum kehabisan!
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TasKu Premium. Semua hak dilindungi undang-undang.</p>
+            <p>Kepuasan pelanggan adalah prioritas utama kami</p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic counter for viewers
+        function updateViewers() {
+            const viewers = document.getElementById('viewers');
+            let count = parseInt(viewers.textContent);
+            // Random increase/decrease
+            const change = Math.random() > 0.5 ? Math.floor(Math.random() * 5) + 1 : -Math.floor(Math.random() * 3) - 1;
+            count = Math.max(2800, count + change);
+            viewers.textContent = count.toLocaleString();
+        }
+
+        // Dynamic counter for stock
+        function updateStock() {
+            const stock = document.getElementById('stock');
+            let count = parseInt(stock.textContent);
+            // Occasionally decrease stock
+            if (Math.random() > 0.85) {
+                count = Math.max(20, count - 1);
+                stock.textContent = count;
+            }
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const hours = document.getElementById('hours');
+            const minutes = document.getElementById('minutes');
+            const seconds = document.getElementById('seconds');
+            
+            let h = parseInt(hours.textContent);
+            let m = parseInt(minutes.textContent);
+            let s = parseInt(seconds.textContent);
+            
+            s--;
+            if (s < 0) {
+                s = 59;
+                m--;
+                if (m < 0) {
+                    m = 59;
+                    h--;
+                    if (h < 0) {
+                        h = 23;
+                    }
+                }
+            }
+            
+            hours.textContent = h.toString().padStart(2, '0');
+            minutes.textContent = m.toString().padStart(2, '0');
+            seconds.textContent = s.toString().padStart(2, '0');
+        }
+
+        // Initialize intervals
+        setInterval(updateViewers, 3000);
+        setInterval(updateStock, 15000);
+        setInterval(updateCountdown, 1000);
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.feature-card, .testimonial, .step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
